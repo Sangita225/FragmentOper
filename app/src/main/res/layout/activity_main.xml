@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnreversestring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="reverse string"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/btnautomorphic"
+        app:layout_constraintTop_toBottomOf="@+id/btnreversenum" />
+
+    <Button
+        android:id="@+id/btnautomorphic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:inputType="number"
+        android:text="automorphic"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/btnpalindrome"
+        app:layout_constraintTop_toBottomOf="@+id/btnarea" />
+
+    <Button
+        android:id="@+id/btnpalindrome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="36dp"
+        android:text="palindrome"
+        android:inputType="number"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnsum" />
+
+    <Button
+        android:id="@+id/btnreversenum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="56dp"
+        android:text="reverse num"
+        android:inputType="number"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/btnarea"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnarea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="56dp"
+        android:text="area"
+        android:inputType="number"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/btnsum"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnsum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="56dp"
+        android:text="sum"
+        android:inputType="number"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="400dp"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnautomorphic">
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
